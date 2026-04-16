@@ -138,7 +138,7 @@ def extract_months(sheets):
 # ======================
 # HEADER
 # ======================
-st.markdown("<div class='title'>📊 Byru Monthly Report Generator (Level 2)</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>📊 Byru AE Monthly Report Generator</div>", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Upload Excel", type=["xlsx"])
 
