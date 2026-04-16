@@ -180,7 +180,7 @@ if uploaded_file:
         col_akhir_berlangganan = None
 
         for i in range(len(df_raw)):
-            row = df_raw.iloc[i].astype(str).str.upper().tolist()
+            row = df_raw.iloc[i].fillna("").astype(str).str.upper().tolist()
             row_str = " ".join(row)
 
             # ======================
@@ -282,7 +282,7 @@ if uploaded_file:
         col_map = {}
 
         for i in range(len(df_raw)):
-            row = df_raw.iloc[i].astype(str).str.upper().tolist()
+            row = df_raw.iloc[i].fillna("").astype(str).str.upper().tolist()
             row_str = " ".join(row)
 
             # ======================
@@ -452,7 +452,7 @@ if uploaded_file:
         mode = None
 
         for i in range(len(df_raw)):
-            row = df_raw.iloc[i].astype(str).str.upper().tolist()
+            row = df_raw.iloc[i].fillna("").astype(str).str.upper().tolist()
 
             # ======================
             # DETECT SECTION
@@ -541,7 +541,7 @@ if uploaded_file:
         # ======================
         header_row = None
         for i in range(len(df_raw)):
-            row = df_raw.iloc[i].astype(str).str.upper().tolist()
+            row = df_raw.iloc[i].fillna("").astype(str).str.upper().tolist()
             if any("PERUSAHAAN" in c for c in row) and any("STATUS" in c for c in row):
                 header_row = i
                 break
