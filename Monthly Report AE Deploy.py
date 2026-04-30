@@ -710,7 +710,7 @@ if uploaded_file:
         border-bottom:3px solid #F6921E;
     ">
     
-    Monthly Report {(datetime.now().replace(day=1) - timedelta(days=1)).strftime('%B %Y')}
+    Monthly Report {datetime.now().strftime('%B %Y')}
     </h2>
 
     <h2 style="color:#26A9E0;border-bottom:1px solid #e5e7eb;padding-bottom:4px;">
